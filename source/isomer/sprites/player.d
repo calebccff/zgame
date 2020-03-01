@@ -12,7 +12,7 @@ class Player {
     private RenderWindow win;
 
     /** Protected default constructor to prevent construction outside of isomer.sprites.player */
-    protected Player() {
+    protected this() {
 
     }
 
