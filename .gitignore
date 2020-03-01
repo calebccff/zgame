@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/zgame
+zgame.so
+zgame.dylib
+zgame.dll
+zgame.a
+zgame.lib
+zgame-test-*
+*.exe
+*.o
+*.obj
+*.lst

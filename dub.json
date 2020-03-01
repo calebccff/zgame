@@ -1,0 +1,15 @@
+{
+	"authors": [
+		"caleb"
+	],
+	"copyright": "Copyright © 2020, caleb",
+	"dependencies": {
+		"dsfml": "~>2.1.1"
+	},
+	"description": "A minimal D application.",
+	"lflags": [
+		"-L/home/caleb/docs/code/libs"
+	],
+	"license": "proprietary",
+	"name": "zgame"
+}
