@@ -3,6 +3,8 @@ module zgame.zgame;
 import zgame.global;
 
 import isomer.sprites.zsprite;
+import isomer.sprites.player_factory;
+import isomer.sprites.player;
 
 import dsfml.graphics;
 
@@ -10,7 +12,13 @@ import dsfml.graphics;
 /** Main class for the game, manages state */
 public class ZGame {
 
-    ZSprite[] sprites = new ZSprite[];
+    /** A collection of currently on screen sprites to be rendered */
+    /** TODO: Use some better structure -> functional? */
+    ZSprite[] sprites;
+
+    this() {
+        sprites ~= PlayerFactory.createPlayer(window);
+    }
 
     /** Handles the main window redraw / event loop */
     int doWindowLoop() {
@@ -25,7 +33,11 @@ public class ZGame {
             }
             window.clear();
             /* Game loop stuff */
-
+            foreach (ZSprite spr; sprites)
+            {
+                spr.gameTick();
+                spr.display();
+            }
             /* end game loop stuff */
             window.display();
         }

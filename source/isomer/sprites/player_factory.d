@@ -7,7 +7,7 @@ import dsfml.graphics.renderwindow;
 static class PlayerFactory {
 
     /** Creates a player with an instance of RenderWindow */
-    public static Player createPlayer(RenderWindow win) {
+    public static Player createPlayer(ref RenderWindow win) {
         return new Player().withRenderWindow(win);
     }
 }

@@ -12,7 +12,7 @@ react to events and trigger events for other objects
 abstract class ZSprite {
 
     protected Vector2f _position;
-    protected RenderWindow win;
+    protected RenderWindow* win;
 
     /** Protected default constructor to prevent construction outside of isomer.sprites.player */
     protected this() {
