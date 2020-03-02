@@ -1,4 +1,4 @@
-module global;
+module zgame.global;
 
 public import isomer.utils;
 import std.random;

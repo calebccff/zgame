@@ -3,7 +3,7 @@ module isomer.utils;
 import std.traits;
 
 import dsfml.graphics;
-import global; //Cyclical import
+import zgame.global; //Cyclical import
 ///Function to iniialise the window
 void dsfmlInitWindow(ref RenderWindow window) {
 	window = new RenderWindow(VideoMode(cast(int)width, cast(int)height), //VideoMode.getFullscreenModes()[0],
